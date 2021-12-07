@@ -16,12 +16,7 @@ RUN echo "**** install Python ****" && \
     if [ ! -e /usr/bin/pip ]; then ln -s pip3 /usr/bin/pip ; fi
     
 RUN apk update
-RUN apk add --no-cache jq \
-  curl \
-  opus-dev \
-  ffmpeg-dev \
-  bash \
-\
+RUN apk add jq curl opus-dev ffmpeg-dev bash
     
 RUN curl --insecure -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl \
 	&& chmod a+rx /usr/local/bin/youtube-dl
