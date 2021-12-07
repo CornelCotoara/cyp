@@ -1,7 +1,6 @@
 FROM node:10-alpine
 
-RUN apk upgrade --update && \
-  apk add --no-cache jq \
+RUN  apk add --no-cache jq \
   curl \
   opus-dev \
   ffmpeg-dev bash \
