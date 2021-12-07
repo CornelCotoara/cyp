@@ -1,5 +1,5 @@
 FROM node:10-alpine
-
+RUN apk upgrade
 RUN apk add --no-cache jq \
   curl \
   opus-dev \
