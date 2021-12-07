@@ -1,6 +1,6 @@
 FROM node:10-alpine
 RUN apk update
-RUN apk add --no-cache jq curl
+RUN apk add --no-cache jq curl opus-dev ffmpeg-dev
 RUN curl --insecure -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl \
 	&& chmod a+rx /usr/local/bin/youtube-dl
 WORKDIR /cyp
