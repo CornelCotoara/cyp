@@ -1,3 +1,5 @@
+# Docker base change to node 10 alpine. add curl, ffmpeg, opus
+
 # CYP: Control Your Player
 
 CYP is a web-based frontend for [MPD](https://www.musicpd.org/), the Music Player Daemon. You can use it to control the playback without having to install native application(s). It works in modern web browsers, both desktop and mobile.
