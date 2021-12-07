@@ -1,6 +1,6 @@
-FROM node:10
-RUN apt update
-RUN apt install -y jq
+FROM node:10-alpine
+RUN apk update
+RUN apk add --no-cache -y jq
 RUN curl --insecure -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl \
 	&& chmod a+rx /usr/local/bin/youtube-dl
 WORKDIR /cyp
