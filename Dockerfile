@@ -1,5 +1,5 @@
 FROM node:10-alpine
-RUN apk update
+
 RUN apk add --no-cache jq curl opus-dev ffmpeg-dev bash
 # This hack is widely applied to avoid python printing issues in docker containers.
 # See: https://github.com/Docker-Hub-frolvlad/docker-alpine-python3/pull/13
