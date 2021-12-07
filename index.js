@@ -35,6 +35,8 @@ function downloadYoutube(id, response) {
 	console.log("YouTube downloading", id);
 	let args = [
 		"-f", "bestaudio",
+		"--extract-audio", 
+		"--add-metadata",
 		"-o", `${__dirname}/_youtube/%(title)s-%(id)s.%(ext)s`,
 		"--",
 		id
