@@ -4,7 +4,7 @@ const port = Number(process.argv[2]) || process.env.PORT || 8080;
 
 let tickets = [];
 
-const cmd = "youtube-dl";
+const cmd = "yt-dlp";
 
 function escape(arg) {
     return `'${arg.replace(/'/g, `'\\''`)}'`;
@@ -34,9 +34,10 @@ function downloadYoutube(id, response) {
 
 	console.log("YouTube downloading", id);
 	let args = [
-		"-f", "bestaudio",
+		"-ciwf", "ba",
 		"--extract-audio", 
 		"--add-metadata",
+		"--write-thumbnail",
 		"-o", `${__dirname}/_youtube/%(title)s-%(id)s.%(ext)s`,
 		"--",
 		id
