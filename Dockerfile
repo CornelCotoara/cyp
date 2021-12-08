@@ -15,8 +15,8 @@ RUN apk upgrade --update && \
   jq \
   curl \
   bash \
-  opus-dev \
-  ffmpeg-dev
+  opus \
+  ffmpeg
 
 # This hack is widely applied to avoid python printing issues in docker containers.
 # See: https://github.com/Docker-Hub-frolvlad/docker-alpine-python3/pull/13
