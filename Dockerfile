@@ -11,7 +11,7 @@ RUN apk upgrade --update && \
 
 # prerequisites
 RUN apk upgrade --update && \
-  apk add --no-cache node \
+  apk add --no-cache npm \
   jq \
   curl \
   bash \
