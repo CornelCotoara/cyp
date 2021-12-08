@@ -10,8 +10,7 @@ RUN apk upgrade --update && \
   date
 
 # prerequisites
-RUN apk add --no-cache \
-  node \
+RUN apk add --no-cache node \
   jq \
   curl \
   bash \
