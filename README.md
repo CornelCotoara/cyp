@@ -1,6 +1,6 @@
 # Docker base change to alpine edge!. add node, curl, ffmpeg, opus! Youtube-dl extract audio and tag from video! Enjoy! 
 ## Docker image size 236.6 MB 👍
-## Replave youtube-dl by yt-dlp, lightning fast download! 🌩️🌩️🌩️🌩️
+## Replace youtube-dl by yt-dlp, lightning fast download! 🌩️🌩️🌩️🌩️
 ```sh
 [download] 100% of 233.68MiB in 00:02 
 ```
