@@ -31,8 +31,9 @@ RUN echo "**** install Python ****" && \
     pip3 install --no-cache --upgrade pip setuptools wheel && \
     if [ ! -e /usr/bin/pip ]; then ln -s pip3 /usr/bin/pip ; fi
     
-RUN curl --insecure -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl \
-	&& chmod a+rx /usr/local/bin/youtube-dl
+RUN curl --insecure -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp \
+	&& chmod a+rx /usr/local/bin/yt-dlp
+
 WORKDIR /cyp
 COPY package.json .
 RUN npm i
