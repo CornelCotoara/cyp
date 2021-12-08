@@ -1,7 +1,9 @@
 # Docker base change to alpine edge!. add node, curl, ffmpeg, opus! Youtube-dl extract audio and tag from video! Enjoy! 
 ## Docker image size 213.4 MB 👍
 ## Replave youtube-dl by yt-dlp, lightning fast download! 🌩️🌩️🌩️🌩️
-
+```sh
+[download] 100% of 233.68MiB in 00:02 
+```
 ```sh
 docker pull ghcr.io/cornelcotoara/docker-cyp-alpine:master
 ```
