@@ -1,4 +1,4 @@
-FROM alpine:edge
+FROM alpine:3
 # timezone
 # https://gitlab.alpinelinux.org/alpine/aports/-/issues/5543
 # /usr/share/zoneinfo/Europe/Bucharest
